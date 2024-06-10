@@ -18,3 +18,7 @@ export const allocate = (seatReference: SeatReference) => {
 };
 
 export const countOfBooked = () => allocated.length;
+
+export const clearAllBookings = () => {
+    allocated.length = 0;
+}

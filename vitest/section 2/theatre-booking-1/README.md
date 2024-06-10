@@ -14,3 +14,4 @@ The input will be a seat or row reference - e.g. `A/3` or `C`.
 - Add booking for one seat
 - Two seat booking
 - How many seats are booked?
+- Provide a way to clear all bookings
