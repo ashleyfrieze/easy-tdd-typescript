@@ -1,7 +1,7 @@
 {
   "name": "leap-year-1",
   "version": "1.0.0",
-  "description": "How to create a `vitest` project from scratch.",
+  "description": "Basic test first implementation of leap year algorithm",
   "main": "index.ts",
   "scripts": {
     "test": "vitest run --coverage",

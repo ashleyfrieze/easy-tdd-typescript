@@ -1,7 +1,7 @@
 {
-  "name": "leap-year-solution",
+  "name": "theatre-booking-1",
   "version": "1.0.0",
-  "description": "Solving the leap year exercise.",
+  "description": "Basic theatre booking scenarios",
   "main": "index.ts",
   "scripts": {
     "test": "vitest run --coverage",
