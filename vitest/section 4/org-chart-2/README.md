@@ -1,5 +1,7 @@
 # Org Chart
 
+> Example from previous section with a test reporter configuration added
+
 We will store Employees.
 
 ```js

@@ -1,0 +1,11 @@
+{
+  "id": "emp1",
+  "name": "Bill Stubbs",
+  "department": "IT",
+  "roles": ["developer", "first aider"],
+  "location": {
+    "building": "IC1",
+    "floor": 1,
+    "desk": 27
+  }
+}

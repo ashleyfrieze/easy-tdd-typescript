@@ -1,5 +1,8 @@
 # Org Chart
 
+> Example from previous section with a test reporter configuration added
+> Test code moved into its own directory
+
 We will store Employees.
 
 ```js
