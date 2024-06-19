@@ -1,0 +1,19 @@
+{
+  "name": "record-source-push-3",
+  "version": "1.0.0",
+  "description": "How to create a `vitest` project from scratch.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "vitest run --coverage",
+    "test:watch": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@vitest/coverage-v8": "^1.6.0",
+    "prettier": "^3.3.1",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
