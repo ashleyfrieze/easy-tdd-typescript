@@ -19,8 +19,12 @@ export type ServerPostsResponse = ServerPost[];
 // TODO
 export const convertServerPosts = (
   serverResponse: ServerPostsResponse
-): PostAndCount | undefined => undefined;
-
+): PostAndCount => ({
+  who: `UserId = ${serverResponse[0].id}`,
+  subject: serverResponse[0].title,
+  count: serverResponse.length,
+  summary: serverResponse[0].body.slice(0, 10),
+});
 
 export const findPosts = async (): Promise<PostAndCount> => ({
   who: 'userId = 1',
