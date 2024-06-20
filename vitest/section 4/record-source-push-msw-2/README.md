@@ -1,6 +1,7 @@
 # Record Source Pushing To Endpoint
 
 > Uses MSW to mock the server [MSW](https://mswjs.io/docs/getting-started)
+> Mixes it with `vi.fn()` to provide dynamic mocking of the server and inspect requests
 
 When we create records, we provide metadata about the source.
 
