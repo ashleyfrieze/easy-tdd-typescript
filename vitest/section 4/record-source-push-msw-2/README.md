@@ -1,6 +1,6 @@
 # Record Source Pushing To Endpoint
 
-> Refactored to remove dependency injection and use mocks instead
+> Uses MSW to mock the server [MSW](https://mswjs.io/docs/getting-started)
 
 When we create records, we provide metadata about the source.
 

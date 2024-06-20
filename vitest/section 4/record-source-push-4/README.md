@@ -1,6 +1,6 @@
 # Record Source Pushing To Endpoint
 
-> Refactored to remove dependency injection and use mocks instead
+> Contains the solution to the conversion problem exercise
 
 When we create records, we provide metadata about the source.
 
