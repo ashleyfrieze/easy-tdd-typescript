@@ -1,5 +1,7 @@
 # TDD in Brief
 
+With example code in [EasyTDD TypeScript on GitHub](https://github.com/ashleyfrieze/easy-tdd-typescript).
+
 ## Philosophy
 
 - Write test before code
