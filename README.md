@@ -16,3 +16,5 @@ npm run test
 The code has been built with node20. You may use the `.nvmrc` file by typing `nvm use` if you're an `nvm` user.
 
 Examples relate to the Udemy Course _Easy Test Driven Development with TypeScript and Vitest_.
+
+See also the [cheatsheets](./cheatsheets.md)
