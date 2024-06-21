@@ -6,6 +6,17 @@
 - Work incrementally
 - Use a checklist to keep track of current and future increments
 
+### Why?
+
+- Focusing on behaviour before writing code helps us focus on the outcome we want
+- Focusing on achieving incremental meaningful outcomes helps write only code we need
+- Locking the behaviour in the grip of a test that will show if it stops working helps us protect the value in our system
+- Experimenting with code, driven by tests, is quicker than trying to get it perfect first time
+- It's easy and safe to refactor
+- Writing tests that focus on meaningful outcomes, avoids the tests getting broken by valid refactorings
+- We need to spend less time manually testing and debugging our code
+- We can built the testing into our deployment pipelines to give us strong assurance that we're maintaining quality
+
 ## Structure
 
 - Code goes in a test fixture
@@ -40,7 +51,7 @@
   - `mock.mockResolvedValue(...)` - as above but for promises
 - `vi.mock('module/path', () => ({ ... substitute for module ...  }))` - replace a module with a mock alternative
   - `vi.mocked(importedFunction)` - convert the import of the function into a `MockedFunction` which has the interface of the imported function, but ALSO the interface of a `vi.fn()` so we can assert with it
-  
+
 ## MSW
 
 [MSW](https://mswjs.io/)

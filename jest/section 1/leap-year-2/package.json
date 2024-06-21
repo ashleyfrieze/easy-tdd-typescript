@@ -1,0 +1,19 @@
+{
+  "name": "leap-year-2",
+  "version": "1.0.0",
+  "description": "Developing the leap year code",
+  "main": "index.ts",
+  "scripts": {
+    "test": "vitest run --coverage",
+    "test:watch": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.1",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.2"
+  }
+}

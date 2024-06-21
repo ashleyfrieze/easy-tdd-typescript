@@ -17,4 +17,4 @@ The code has been built with node20. You may use the `.nvmrc` file by typing `nv
 
 Examples relate to the Udemy Course _Easy Test Driven Development with TypeScript and Vitest_.
 
-See also the [cheatsheets](./cheatsheets.md)
+See also the [cheatsheets](./cheatsheets.md), especially for [Jest users](./jest-users.md)
