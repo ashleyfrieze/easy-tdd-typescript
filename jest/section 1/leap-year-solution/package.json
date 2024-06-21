@@ -1,7 +1,7 @@
 {
-  "name": "leap-year-2",
+  "name": "leap-year-solution",
   "version": "1.0.0",
-  "description": "Developing the leap year code",
+  "description": "Solving the leap year exercise.",
   "main": "index.ts",
   "scripts": {
     "test": "jest run . --coverage",
