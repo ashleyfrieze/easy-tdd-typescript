@@ -3,7 +3,7 @@
 Vitest and Jest are very similar, and have amalgamated most of the features found in Jasmine, Mocha, Chai etc.
 
 - For installing a clean Jest project, using `ts-jest` see [here](./jest/fresh-project/README.md)
-- All the examples are available in `./jest/` in this repo
+- All the examples are available convert to equivalent projects in `jest/` in the examples repo.
 
 ## Major Differences
 
