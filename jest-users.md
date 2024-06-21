@@ -23,6 +23,8 @@ to make migration from Jest really easy, though it has a few more features than 
 
 ### Minor Differences
 
+#### Environment `.env` Files
+
 Jest doesn't automatically add `.env` file key/value pairs to the process environment.
 
 This can be _fixed_ by:
@@ -36,6 +38,51 @@ and then add to the `jest.config.js` file:
 ```js
 module.exports = {
   setupFiles: ["dotenv/config"],
+```
+
+#### React Testing
+
+The set up for react testing involves modifying `jest.config.js` so that the environment is `jsdom` not `node`. As well as adding some mock files to resolve non typescript assets.
+
+See the GitHub repo for specifics, but the `jest.config.js` looks like this:
+
+```js
+/** @type {import('ts-jest').JestConfigWithTsJest} */
+export default {
+  preset: "ts-jest",
+  testEnvironment: "jsdom",
+  setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
+  transform: {
+    "^.+\\.tsx?$": ["ts-jest", { tsconfig: "tsconfig.test.json" }],
+  },
+  moduleNameMapper: {
+    "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/src/__mocks__/fileMock.js",
+    "\\.css$": "<rootDir>/src/__mocks__/styleMock.js",
+  },
+};
+```
+
+Add also need to install the Jest shim for jsdom:
+
+```bash
+npm i -D jest-environment-jsdom
+```
+
+a test-specific `tsconfig.test.json`:
+
+```json
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true
+  }
+}
+```
+
+as well as adding this to `src/setupTests.ts`:
+
+```ts
+import "@testing-library/jest-dom";
 ```
 
 ## How to switch from Vitest to Jest
