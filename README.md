@@ -1,6 +1,8 @@
 # Easy TDD with TypeScript and Vitest
 
-This repo contains the example code in both vitest and jest format.
+Examples relating to the [Easy TDD](https://www.udemy.com/course/easy-test-driven-development-with-typescript-and-vitest) course on Udemy.com.
+
+This repo contains the example code in both vitest and jest format. Though the course focuses on Vitest, the techniques are easily [converted to jest](./jest-users.md).
 
 To use the code, navigate to:
 
